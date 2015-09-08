@@ -16,6 +16,7 @@
 		FB9C82911B9EBEAC00109721 /* DCSettingWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB9C82901B9EBEAC00109721 /* DCSettingWindowController.m */; };
 		FB9C82951B9EC10800109721 /* DCSettingWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB9C82941B9EC10800109721 /* DCSettingWindowController.xib */; };
 		FB9C82981B9EC37000109721 /* DCLazyInstantiateConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = FB9C82971B9EC37000109721 /* DCLazyInstantiateConfig.m */; };
+		FBFD18A21B9F0B2400C6CD5D /* images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBFD18A11B9F0B2400C6CD5D /* images.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		FB9C82971B9EC37000109721 /* DCLazyInstantiateConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCLazyInstantiateConfig.m; sourceTree = "<group>"; };
 		FB9C82991B9EC47700109721 /* SingletonMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SingletonMacro.h; sourceTree = "<group>"; };
 		FB9C829A1B9EC51800109721 /* DCLazyInstantiate-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DCLazyInstantiate-Prefix.pch"; sourceTree = "<group>"; };
+		FBFD18A11B9F0B2400C6CD5D /* images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = images.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 				FB4CEA1B1B55F007006430AB /* Info.plist */,
 				FB9C828D1B9EB34D00109721 /* Settings.plist */,
 				FB4CEA1C1B55F007006430AB /* DCLazyInstantiate.xcscheme */,
+				FBFD18A11B9F0B2400C6CD5D /* images.xcassets */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -181,6 +184,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FB4CEA1D1B55F007006430AB /* DCLazyInstantiate.xcscheme in Resources */,
+				FBFD18A21B9F0B2400C6CD5D /* images.xcassets in Resources */,
 				FB9C828E1B9EB34D00109721 /* Settings.plist in Resources */,
 				FB9C82951B9EC10800109721 /* DCSettingWindowController.xib in Resources */,
 			);

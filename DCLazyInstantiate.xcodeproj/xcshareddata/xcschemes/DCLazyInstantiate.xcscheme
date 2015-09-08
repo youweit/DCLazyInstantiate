@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "890A4B3E171F031300AFE577"
+               BlueprintIdentifier = "FB4CEA111B55F007006430AB"
                BuildableName = "DCLazyInstantiate.xcplugin"
                BlueprintName = "DCLazyInstantiate"
                ReferencedContainer = "container:DCLazyInstantiate.xcodeproj">
@@ -56,12 +56,13 @@
       allowLocationSimulation = "NO"
       viewDebuggingEnabled = "No">
       <PathRunnable
+         runnableDebuggingMode = "0"
          FilePath = "/Applications/Xcode.app">
       </PathRunnable>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "890A4B3E171F031300AFE577"
+            BlueprintIdentifier = "FB4CEA111B55F007006430AB"
             BuildableName = "DCLazyInstantiate.xcplugin"
             BlueprintName = "DCLazyInstantiate"
             ReferencedContainer = "container:DCLazyInstantiate.xcodeproj">

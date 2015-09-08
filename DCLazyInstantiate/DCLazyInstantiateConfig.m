@@ -27,7 +27,6 @@ DEF_SINGLETON( DCLazyInstantiateConfig );
 	NSUInteger sMask = [self sMaskWthShortcut:shortcut];
 	
 	if (skey && sMask) {
-		
 		[menuItem setKeyEquivalent:skey];
 		[menuItem setKeyEquivalentModifierMask:sMask];
 	}
@@ -53,9 +52,9 @@ DEF_SINGLETON( DCLazyInstantiateConfig );
 + (NSDictionary *)keyShortcut {
 	NSDictionary *shortcut = [[NSUserDefaults standardUserDefaults] dictionaryForKey:kDCLazyInstantiateShortcut];
 	if (nil == shortcut) {
-		//default is shift + cmd + d
+		//default is shift + cmd + l
 		shortcut = @{ @"mask" : @"shift+cmd",
-					  @"key" : @"d" };
+					  @"key" : @"-" };
 		[[NSUserDefaults standardUserDefaults] setObject:shortcut forKey:kDCLazyInstantiateShortcut];
 		[[NSUserDefaults standardUserDefaults] synchronize];
 	}
@@ -82,7 +81,7 @@ DEF_SINGLETON( DCLazyInstantiateConfig );
         dc_generateMenuItem.target = [DCLazyInstantiate sharedInstance];
         dc_generateMenuItem.action = NSSelectorFromString(selectorGenerateLazyInstantiate);
 		[self setShortcut:[self keyShortcut] menuItem:dc_generateMenuItem];
-		[DCLazyInstantiateConfig sharedInstance].keyMenuItem = dc_lazyInstantiateMenuItem;
+		[DCLazyInstantiateConfig sharedInstance].keyMenuItem = dc_generateMenuItem;
 		
 		NSMenuItem *dc_settingMenuItem = [[NSMenuItem alloc] init];
         dc_settingMenuItem.title  = @"Setting";

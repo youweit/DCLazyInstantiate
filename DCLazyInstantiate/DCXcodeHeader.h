@@ -49,9 +49,7 @@
 @interface IDEEditorDocument : NSDocument
 @end
 
-
 @interface DVTSourceTextStorage : NSTextStorage
-
 @end
 
 @interface IDESourceCodeDocument : IDEEditorDocument
