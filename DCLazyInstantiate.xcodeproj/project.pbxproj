@@ -14,7 +14,7 @@
 		FB4CEA321B55F36B006430AB /* DCXcodeUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = FB4CEA311B55F36B006430AB /* DCXcodeUtils.m */; };
 		FB9C828E1B9EB34D00109721 /* Settings.plist in Resources */ = {isa = PBXBuildFile; fileRef = FB9C828D1B9EB34D00109721 /* Settings.plist */; };
 		FB9C82911B9EBEAC00109721 /* DCSettingsWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB9C82901B9EBEAC00109721 /* DCSettingsWindowController.m */; };
-		FB9C82951B9EC10800109721 /* DCSettingWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB9C82941B9EC10800109721 /* DCSettingWindowController.xib */; };
+		FB9C82951B9EC10800109721 /* DCSettingsWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB9C82941B9EC10800109721 /* DCSettingsWindowController.xib */; };
 		FB9C82981B9EC37000109721 /* DCLazyInstantiateConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = FB9C82971B9EC37000109721 /* DCLazyInstantiateConfig.m */; };
 		FBFD18A21B9F0B2400C6CD5D /* images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBFD18A11B9F0B2400C6CD5D /* images.xcassets */; };
 /* End PBXBuildFile section */
@@ -33,7 +33,7 @@
 		FB9C828D1B9EB34D00109721 /* Settings.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Settings.plist; sourceTree = "<group>"; };
 		FB9C828F1B9EBEAC00109721 /* DCSettingsWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCSettingsWindowController.h; sourceTree = "<group>"; };
 		FB9C82901B9EBEAC00109721 /* DCSettingsWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCSettingsWindowController.m; sourceTree = "<group>"; };
-		FB9C82941B9EC10800109721 /* DCSettingWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DCSettingWindowController.xib; sourceTree = "<group>"; };
+		FB9C82941B9EC10800109721 /* DCSettingsWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DCSettingsWindowController.xib; sourceTree = "<group>"; };
 		FB9C82961B9EC37000109721 /* DCLazyInstantiateConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCLazyInstantiateConfig.h; sourceTree = "<group>"; };
 		FB9C82971B9EC37000109721 /* DCLazyInstantiateConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCLazyInstantiateConfig.m; sourceTree = "<group>"; };
 		FB9C82991B9EC47700109721 /* SingletonMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SingletonMacro.h; sourceTree = "<group>"; };
@@ -122,7 +122,7 @@
 		FBEC4C161B9ED0AB00807A67 /* Nib */ = {
 			isa = PBXGroup;
 			children = (
-				FB9C82941B9EC10800109721 /* DCSettingWindowController.xib */,
+				FB9C82941B9EC10800109721 /* DCSettingsWindowController.xib */,
 			);
 			name = Nib;
 			sourceTree = "<group>";
@@ -186,7 +186,7 @@
 				FB4CEA1D1B55F007006430AB /* DCLazyInstantiate.xcscheme in Resources */,
 				FBFD18A21B9F0B2400C6CD5D /* images.xcassets in Resources */,
 				FB9C828E1B9EB34D00109721 /* Settings.plist in Resources */,
-				FB9C82951B9EC10800109721 /* DCSettingWindowController.xib in Resources */,
+				FB9C82951B9EC10800109721 /* DCSettingsWindowController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
