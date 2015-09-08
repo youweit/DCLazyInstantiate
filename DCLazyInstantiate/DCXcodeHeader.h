@@ -17,6 +17,8 @@
 
 /** Converts from a line number in the text to a character number */
 - (NSRange)characterRangeForLineRange:(NSRange)lineRange;
+
+- (void)replaceCharactersInRange:(NSRange)range withString:(NSString *)string withUndoManager:(id)undoManager;
 @end
 
 @interface DVTCompletingTextView : NSTextView
@@ -47,7 +49,14 @@
 @interface IDEEditorDocument : NSDocument
 @end
 
+
+@interface DVTSourceTextStorage : NSTextStorage
+
+@end
+
 @interface IDESourceCodeDocument : IDEEditorDocument
+- (DVTTextStorage *)textStorage;
+- (NSUndoManager *)undoManager;
 @end
 
 @interface IDESourceCodeEditor : IDEEditor

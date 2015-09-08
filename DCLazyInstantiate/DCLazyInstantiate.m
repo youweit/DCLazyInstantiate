@@ -77,9 +77,9 @@ DEF_SINGLETON( DCLazyInstantiate );
         }
 
         if (result.length > 0) {
-            NSMutableString *string = [NSMutableString stringWithString:sourceTextView.string];
-            [string insertString:result atIndex:(sourceTextView.string.length - 5)];
-            sourceTextView.string = string;
+			[[DCXcodeUtils currentTextStorage] beginEditing];
+			[[DCXcodeUtils currentTextStorage] replaceCharactersInRange:NSMakeRange((sourceTextView.string.length - 5), 0) withString:result withUndoManager:[[DCXcodeUtils currentSourceCodeDocument] undoManager]];
+			[[DCXcodeUtils currentTextStorage] endEditing];
         }
     }
 }
