@@ -8,12 +8,12 @@
 
 #import "DCLazyInstantiate.h"
 #import "DCLazyInstantiateConfig.h"
-#import "DCSettingWindowController.h"
+#import "DCSettingsWindowController.h"
 
 @interface DCLazyInstantiate ()
 
 @property (nonatomic, strong, readwrite) NSBundle *bundle;
-@property (nonatomic, strong) DCSettingWindowController *settingWindow;
+@property (nonatomic, strong) DCSettingsWindowController *settingWindow;
 
 @end
 
@@ -73,7 +73,7 @@ DEF_SINGLETON( DCLazyInstantiate );
             NSArray *declare = [[searchedString substringWithRange:group1] componentsSeparatedByString:@"*"];
             NSString *class = [declare[0] stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
             NSString *varName = [declare[1] stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
-            result = [NSString stringWithFormat:@"- (%@ *)%@ {\n\tif(_%@ == nil) {\n\t\t_%@ = [[%@ alloc] init];\n\t}\n\treturn _%@;\n}\n", class, varName, varName, varName, class, varName];
+            result = [NSString stringWithFormat:@"- (%@ *)%@ {\n\tif(_%@ == nil) {\n\t\t_%@ = [[%@ alloc] init];\n\t}\n\treturn _%@;\n}\n\n", class, varName, varName, varName, class, varName];
         }
 
         if (result.length > 0) {
@@ -86,7 +86,7 @@ DEF_SINGLETON( DCLazyInstantiate );
 
 - (void)showSetting:(id)sender {
 	if ( nil == self.settingWindow ) {
-		self.settingWindow = [[DCSettingWindowController alloc] initWithWindowNibName:NSStringFromClass([DCSettingWindowController class])];
+		self.settingWindow = [[DCSettingsWindowController alloc] initWithWindowNibName:NSStringFromClass([DCSettingsWindowController class])];
 	}
 	[self.settingWindow showWindow:self.settingWindow];
 }

@@ -7,13 +7,13 @@
 //
 
 #import "DCLazyInstantiateConfig.h"
-#import "DCSettingWindowController.h"
+#import "DCSettingsWindowController.h"
 
-@interface DCSettingWindowController ()
+@interface DCSettingsWindowController ()
 
 @end
 
-@implementation DCSettingWindowController
+@implementation DCSettingsWindowController
 
 - (void)windowDidLoad {
     [super windowDidLoad];

@@ -13,7 +13,7 @@
 		FB4CEA201B55F007006430AB /* DCLazyInstantiate.m in Sources */ = {isa = PBXBuildFile; fileRef = FB4CEA1F1B55F007006430AB /* DCLazyInstantiate.m */; };
 		FB4CEA321B55F36B006430AB /* DCXcodeUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = FB4CEA311B55F36B006430AB /* DCXcodeUtils.m */; };
 		FB9C828E1B9EB34D00109721 /* Settings.plist in Resources */ = {isa = PBXBuildFile; fileRef = FB9C828D1B9EB34D00109721 /* Settings.plist */; };
-		FB9C82911B9EBEAC00109721 /* DCSettingWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB9C82901B9EBEAC00109721 /* DCSettingWindowController.m */; };
+		FB9C82911B9EBEAC00109721 /* DCSettingsWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB9C82901B9EBEAC00109721 /* DCSettingsWindowController.m */; };
 		FB9C82951B9EC10800109721 /* DCSettingWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB9C82941B9EC10800109721 /* DCSettingWindowController.xib */; };
 		FB9C82981B9EC37000109721 /* DCLazyInstantiateConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = FB9C82971B9EC37000109721 /* DCLazyInstantiateConfig.m */; };
 		FBFD18A21B9F0B2400C6CD5D /* images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBFD18A11B9F0B2400C6CD5D /* images.xcassets */; };
@@ -31,8 +31,8 @@
 		FB4CEA301B55F36B006430AB /* DCXcodeUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCXcodeUtils.h; sourceTree = "<group>"; };
 		FB4CEA311B55F36B006430AB /* DCXcodeUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCXcodeUtils.m; sourceTree = "<group>"; };
 		FB9C828D1B9EB34D00109721 /* Settings.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Settings.plist; sourceTree = "<group>"; };
-		FB9C828F1B9EBEAC00109721 /* DCSettingWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCSettingWindowController.h; sourceTree = "<group>"; };
-		FB9C82901B9EBEAC00109721 /* DCSettingWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCSettingWindowController.m; sourceTree = "<group>"; };
+		FB9C828F1B9EBEAC00109721 /* DCSettingsWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCSettingsWindowController.h; sourceTree = "<group>"; };
+		FB9C82901B9EBEAC00109721 /* DCSettingsWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCSettingsWindowController.m; sourceTree = "<group>"; };
 		FB9C82941B9EC10800109721 /* DCSettingWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DCSettingWindowController.xib; sourceTree = "<group>"; };
 		FB9C82961B9EC37000109721 /* DCLazyInstantiateConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCLazyInstantiateConfig.h; sourceTree = "<group>"; };
 		FB9C82971B9EC37000109721 /* DCLazyInstantiateConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCLazyInstantiateConfig.m; sourceTree = "<group>"; };
@@ -89,8 +89,8 @@
 				FB4CEA1F1B55F007006430AB /* DCLazyInstantiate.m */,
 				FB9C82961B9EC37000109721 /* DCLazyInstantiateConfig.h */,
 				FB9C82971B9EC37000109721 /* DCLazyInstantiateConfig.m */,
-				FB9C828F1B9EBEAC00109721 /* DCSettingWindowController.h */,
-				FB9C82901B9EBEAC00109721 /* DCSettingWindowController.m */,
+				FB9C828F1B9EBEAC00109721 /* DCSettingsWindowController.h */,
+				FB9C82901B9EBEAC00109721 /* DCSettingsWindowController.m */,
 				FB4CEA1A1B55F007006430AB /* Supporting Files */,
 			);
 			path = DCLazyInstantiate;
@@ -200,7 +200,7 @@
 				FB9C82981B9EC37000109721 /* DCLazyInstantiateConfig.m in Sources */,
 				FB4CEA201B55F007006430AB /* DCLazyInstantiate.m in Sources */,
 				FB4CEA321B55F36B006430AB /* DCXcodeUtils.m in Sources */,
-				FB9C82911B9EBEAC00109721 /* DCSettingWindowController.m in Sources */,
+				FB9C82911B9EBEAC00109721 /* DCSettingsWindowController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

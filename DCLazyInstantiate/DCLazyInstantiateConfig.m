@@ -8,7 +8,7 @@
 
 #import "DCLazyInstantiateConfig.h"
 #import "DCLazyInstantiate.h"
-#import "DCSettingWindowController.h"
+#import "DCSettingsWindowController.h"
 
 static NSString *const kDCLazyInstantiateShortcut      = @"kDCLazyInstantiate.shortcut";
 static NSString *const selectorGenerateLazyInstantiate = @"generateLazyInstantiate:";
@@ -84,7 +84,7 @@ DEF_SINGLETON( DCLazyInstantiateConfig );
 		[DCLazyInstantiateConfig sharedInstance].keyMenuItem = dc_generateMenuItem;
 		
 		NSMenuItem *dc_settingMenuItem = [[NSMenuItem alloc] init];
-        dc_settingMenuItem.title  = @"Setting";
+        dc_settingMenuItem.title  = @"Settings";
         dc_settingMenuItem.target = [DCLazyInstantiate sharedInstance];
         dc_settingMenuItem.action = NSSelectorFromString(selectorShowSetting);
 		

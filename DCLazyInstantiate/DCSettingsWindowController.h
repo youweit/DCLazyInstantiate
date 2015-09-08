@@ -6,7 +6,7 @@
 //  Copyright (c) 2015 dcard. All rights reserved.
 //
 
-@interface DCSettingWindowController : NSWindowController<NSTextFieldDelegate>
+@interface DCSettingsWindowController : NSWindowController<NSTextFieldDelegate>
 
 @property (nonatomic, strong) IBOutlet NSTextField * mask;
 @property (nonatomic, strong) IBOutlet NSTextField * key;
