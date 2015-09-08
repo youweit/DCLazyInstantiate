@@ -1,0 +1,13 @@
+//
+//  DCLazyInstantiate-Prefix.pch
+//  DCLazyInstantiate
+//
+//  Created by Youwei Teng on 9/8/15.
+//  Copyright (c) 2015 dcard. All rights reserved.
+//
+
+#ifdef __OBJC__
+	#import <Cocoa/Cocoa.h>
+	#import "SingletonMacro.h"
+	#import "DCXcodeUtils.h"
+#endif

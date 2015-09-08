@@ -1,0 +1,331 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FB4CEA161B55F007006430AB /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB4CEA151B55F007006430AB /* AppKit.framework */; };
+		FB4CEA181B55F007006430AB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB4CEA171B55F007006430AB /* Foundation.framework */; };
+		FB4CEA1D1B55F007006430AB /* DCLazyInstantiate.xcscheme in Resources */ = {isa = PBXBuildFile; fileRef = FB4CEA1C1B55F007006430AB /* DCLazyInstantiate.xcscheme */; };
+		FB4CEA201B55F007006430AB /* DCLazyInstantiate.m in Sources */ = {isa = PBXBuildFile; fileRef = FB4CEA1F1B55F007006430AB /* DCLazyInstantiate.m */; };
+		FB4CEA321B55F36B006430AB /* DCXcodeUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = FB4CEA311B55F36B006430AB /* DCXcodeUtils.m */; };
+		FB9C828E1B9EB34D00109721 /* Settings.plist in Resources */ = {isa = PBXBuildFile; fileRef = FB9C828D1B9EB34D00109721 /* Settings.plist */; };
+		FB9C82911B9EBEAC00109721 /* DCSettingWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB9C82901B9EBEAC00109721 /* DCSettingWindowController.m */; };
+		FB9C82951B9EC10800109721 /* DCSettingWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB9C82941B9EC10800109721 /* DCSettingWindowController.xib */; };
+		FB9C82981B9EC37000109721 /* DCLazyInstantiateConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = FB9C82971B9EC37000109721 /* DCLazyInstantiateConfig.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		FB4CEA121B55F007006430AB /* DCLazyInstantiate.xcplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DCLazyInstantiate.xcplugin; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB4CEA151B55F007006430AB /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		FB4CEA171B55F007006430AB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		FB4CEA1B1B55F007006430AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB4CEA1C1B55F007006430AB /* DCLazyInstantiate.xcscheme */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = DCLazyInstantiate.xcscheme; path = DCLazyInstantiate.xcodeproj/xcshareddata/xcschemes/DCLazyInstantiate.xcscheme; sourceTree = SOURCE_ROOT; };
+		FB4CEA1E1B55F007006430AB /* DCLazyInstantiate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DCLazyInstantiate.h; sourceTree = "<group>"; };
+		FB4CEA1F1B55F007006430AB /* DCLazyInstantiate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DCLazyInstantiate.m; sourceTree = "<group>"; };
+		FB4CEA2F1B55F2D5006430AB /* DCXcodeHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DCXcodeHeader.h; sourceTree = "<group>"; };
+		FB4CEA301B55F36B006430AB /* DCXcodeUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCXcodeUtils.h; sourceTree = "<group>"; };
+		FB4CEA311B55F36B006430AB /* DCXcodeUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCXcodeUtils.m; sourceTree = "<group>"; };
+		FB9C828D1B9EB34D00109721 /* Settings.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Settings.plist; sourceTree = "<group>"; };
+		FB9C828F1B9EBEAC00109721 /* DCSettingWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCSettingWindowController.h; sourceTree = "<group>"; };
+		FB9C82901B9EBEAC00109721 /* DCSettingWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCSettingWindowController.m; sourceTree = "<group>"; };
+		FB9C82941B9EC10800109721 /* DCSettingWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DCSettingWindowController.xib; sourceTree = "<group>"; };
+		FB9C82961B9EC37000109721 /* DCLazyInstantiateConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCLazyInstantiateConfig.h; sourceTree = "<group>"; };
+		FB9C82971B9EC37000109721 /* DCLazyInstantiateConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCLazyInstantiateConfig.m; sourceTree = "<group>"; };
+		FB9C82991B9EC47700109721 /* SingletonMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SingletonMacro.h; sourceTree = "<group>"; };
+		FB9C829A1B9EC51800109721 /* DCLazyInstantiate-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DCLazyInstantiate-Prefix.pch"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FB4CEA101B55F007006430AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB4CEA161B55F007006430AB /* AppKit.framework in Frameworks */,
+				FB4CEA181B55F007006430AB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FB4CEA091B55F007006430AB = {
+			isa = PBXGroup;
+			children = (
+				FB4CEA191B55F007006430AB /* DCLazyInstantiate */,
+				FB4CEA141B55F007006430AB /* Frameworks */,
+				FB4CEA131B55F007006430AB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FB4CEA131B55F007006430AB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FB4CEA121B55F007006430AB /* DCLazyInstantiate.xcplugin */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FB4CEA141B55F007006430AB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FB4CEA151B55F007006430AB /* AppKit.framework */,
+				FB4CEA171B55F007006430AB /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FB4CEA191B55F007006430AB /* DCLazyInstantiate */ = {
+			isa = PBXGroup;
+			children = (
+				FBEC4C161B9ED0AB00807A67 /* Nib */,
+				FBEC4C151B9ED09B00807A67 /* Helper */,
+				FB4CEA1E1B55F007006430AB /* DCLazyInstantiate.h */,
+				FB4CEA1F1B55F007006430AB /* DCLazyInstantiate.m */,
+				FB9C82961B9EC37000109721 /* DCLazyInstantiateConfig.h */,
+				FB9C82971B9EC37000109721 /* DCLazyInstantiateConfig.m */,
+				FB9C828F1B9EBEAC00109721 /* DCSettingWindowController.h */,
+				FB9C82901B9EBEAC00109721 /* DCSettingWindowController.m */,
+				FB4CEA1A1B55F007006430AB /* Supporting Files */,
+			);
+			path = DCLazyInstantiate;
+			sourceTree = "<group>";
+		};
+		FB4CEA1A1B55F007006430AB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FB9C829A1B9EC51800109721 /* DCLazyInstantiate-Prefix.pch */,
+				FB4CEA1B1B55F007006430AB /* Info.plist */,
+				FB9C828D1B9EB34D00109721 /* Settings.plist */,
+				FB4CEA1C1B55F007006430AB /* DCLazyInstantiate.xcscheme */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FBEC4C151B9ED09B00807A67 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				FB9C82991B9EC47700109721 /* SingletonMacro.h */,
+				FB4CEA2F1B55F2D5006430AB /* DCXcodeHeader.h */,
+				FB4CEA301B55F36B006430AB /* DCXcodeUtils.h */,
+				FB4CEA311B55F36B006430AB /* DCXcodeUtils.m */,
+			);
+			name = Helper;
+			sourceTree = "<group>";
+		};
+		FBEC4C161B9ED0AB00807A67 /* Nib */ = {
+			isa = PBXGroup;
+			children = (
+				FB9C82941B9EC10800109721 /* DCSettingWindowController.xib */,
+			);
+			name = Nib;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FB4CEA111B55F007006430AB /* DCLazyInstantiate */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FB4CEA261B55F007006430AB /* Build configuration list for PBXNativeTarget "DCLazyInstantiate" */;
+			buildPhases = (
+				FB4CEA0E1B55F007006430AB /* Sources */,
+				FB4CEA0F1B55F007006430AB /* Resources */,
+				FB4CEA101B55F007006430AB /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DCLazyInstantiate;
+			productName = DCLazyInstantiate;
+			productReference = FB4CEA121B55F007006430AB /* DCLazyInstantiate.xcplugin */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FB4CEA0A1B55F007006430AB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = dcard;
+				TargetAttributes = {
+					FB4CEA111B55F007006430AB = {
+						CreatedOnToolsVersion = 6.4;
+					};
+				};
+			};
+			buildConfigurationList = FB4CEA0D1B55F007006430AB /* Build configuration list for PBXProject "DCLazyInstantiate" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = FB4CEA091B55F007006430AB;
+			productRefGroup = FB4CEA131B55F007006430AB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FB4CEA111B55F007006430AB /* DCLazyInstantiate */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FB4CEA0F1B55F007006430AB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB4CEA1D1B55F007006430AB /* DCLazyInstantiate.xcscheme in Resources */,
+				FB9C828E1B9EB34D00109721 /* Settings.plist in Resources */,
+				FB9C82951B9EC10800109721 /* DCSettingWindowController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FB4CEA0E1B55F007006430AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB9C82981B9EC37000109721 /* DCLazyInstantiateConfig.m in Sources */,
+				FB4CEA201B55F007006430AB /* DCLazyInstantiate.m in Sources */,
+				FB4CEA321B55F36B006430AB /* DCXcodeUtils.m in Sources */,
+				FB9C82911B9EBEAC00109721 /* DCSettingWindowController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		FB4CEA241B55F007006430AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+			};
+			name = Debug;
+		};
+		FB4CEA251B55F007006430AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+			};
+			name = Release;
+		};
+		FB4CEA271B55F007006430AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEPLOYMENT_LOCATION = YES;
+				DSTROOT = "$(HOME)";
+				GCC_PREFIX_HEADER = "DCLazyInstantiate/DCLazyInstantiate-Prefix.pch";
+				INFOPLIST_FILE = DCLazyInstantiate/Info.plist;
+				INSTALL_PATH = "/Library/Application Support/Developer/Shared/Xcode/Plug-ins";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xcplugin;
+			};
+			name = Debug;
+		};
+		FB4CEA281B55F007006430AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEPLOYMENT_LOCATION = YES;
+				DSTROOT = "$(HOME)";
+				GCC_PREFIX_HEADER = "DCLazyInstantiate/DCLazyInstantiate-Prefix.pch";
+				INFOPLIST_FILE = DCLazyInstantiate/Info.plist;
+				INSTALL_PATH = "/Library/Application Support/Developer/Shared/Xcode/Plug-ins";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xcplugin;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FB4CEA0D1B55F007006430AB /* Build configuration list for PBXProject "DCLazyInstantiate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB4CEA241B55F007006430AB /* Debug */,
+				FB4CEA251B55F007006430AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FB4CEA261B55F007006430AB /* Build configuration list for PBXNativeTarget "DCLazyInstantiate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB4CEA271B55F007006430AB /* Debug */,
+				FB4CEA281B55F007006430AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FB4CEA0A1B55F007006430AB /* Project object */;
+}
