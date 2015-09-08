@@ -32,4 +32,4 @@ Xcode -> Edit -> DCLazyInstantiate
 ```
 Shift + Cmd + -
 ```
-You can change the shortcut in Setting, `Xcode -> Edit -> DCLazyInstantiate -> Setting`.
+You can change the shortcut in Settings, `Xcode -> Edit -> DCLazyInstantiate -> Settings`.
