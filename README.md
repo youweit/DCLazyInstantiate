@@ -32,4 +32,10 @@ Xcode -> Edit -> DCLazyInstantiate
 ```
 Shift + Cmd + -
 ```
-You can change the shortcut in Setting, `Xcode -> Edit -> DCLazyInstantiate -> Setting`.
+You can change the shortcut in Settings, `Xcode -> Edit -> DCLazyInstantiate -> Settings`.
+
+## Todo
+
+1. Mutiselect property support.
+2. Customizing code style.
+3. Insert instantiation in specific prama mark setion.
