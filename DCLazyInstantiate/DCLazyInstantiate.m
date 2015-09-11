@@ -58,29 +58,34 @@ DEF_SINGLETON( DCLazyInstantiate );
     // Get the selected text using the range from above.
     NSString *selectedString = [sourceTextView.textStorage.string substringWithRange:lineRange];
     NSString *result = @"";
-
+	
+	
     if (selectedString) {
-        NSString *searchedString = selectedString;
-        NSRange searchedRange;
-        searchedRange = NSMakeRange(0, [searchedString length]);
-        NSString *pattern = @"\\)(.+?)\\;";
-        NSError *error = nil;
-        NSRegularExpression *regex = [NSRegularExpression regularExpressionWithPattern:pattern options:0 error:&error];
-        NSArray *matches = [regex matchesInString:searchedString options:0 range:searchedRange];
-		
-        for (NSTextCheckingResult *match in matches) {
-            NSRange group1 = [match rangeAtIndex:1];
-            NSArray *declare = [[searchedString substringWithRange:group1] componentsSeparatedByString:@"*"];
-            NSString *class = [declare[0] stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
-            NSString *varName = [declare[1] stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
-            result = [NSString stringWithFormat:@"- (%@ *)%@ {\n\tif(_%@ == nil) {\n\t\t_%@ = [[%@ alloc] init];\n\t}\n\treturn _%@;\n}\n\n", class, varName, varName, varName, class, varName];
-        }
+		@try {
+			NSString *searchedString = selectedString;
+			NSRange searchedRange;
+			searchedRange = NSMakeRange(0, [searchedString length]);
+			NSString *pattern = @"\\)(.+?)\\;";
+			NSError *error = nil;
+			NSRegularExpression *regex = [NSRegularExpression regularExpressionWithPattern:pattern options:0 error:&error];
+			NSArray *matches = [regex matchesInString:searchedString options:0 range:searchedRange];
+			
+			for (NSTextCheckingResult *match in matches) {
+				NSRange group1 = [match rangeAtIndex:1];
+				NSArray *declare = [[searchedString substringWithRange:group1] componentsSeparatedByString:@"*"];
+				NSString *class = [declare[0] stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
+				NSString *varName = [declare[1] stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
+				result = [NSString stringWithFormat:@"- (%@ *)%@ {\n\tif(_%@ == nil) {\n\t\t_%@ = [[%@ alloc] init];\n\t}\n\treturn _%@;\n}\n\n", class, varName, varName, varName, class, varName];
+			}
 
-        if (result.length > 0) {
-			[[DCXcodeUtils currentTextStorage] beginEditing];
-			[[DCXcodeUtils currentTextStorage] replaceCharactersInRange:NSMakeRange((sourceTextView.string.length - 5), 0) withString:result withUndoManager:[[DCXcodeUtils currentSourceCodeDocument] undoManager]];
-			[[DCXcodeUtils currentTextStorage] endEditing];
-        }
+			if (result.length > 0) {
+				[[DCXcodeUtils currentTextStorage] beginEditing];
+				[[DCXcodeUtils currentTextStorage] replaceCharactersInRange:NSMakeRange((sourceTextView.string.length - 5), 0) withString:result withUndoManager:[[DCXcodeUtils currentSourceCodeDocument] undoManager]];
+				[[DCXcodeUtils currentTextStorage] endEditing];
+			}
+		} @catch (NSException *exception) {
+			NSLog(@"%@", exception.reason);
+		}
     }
 }
 
@@ -94,5 +99,6 @@ DEF_SINGLETON( DCLazyInstantiate );
 - (void)dealloc {
     [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
+
 
 @end
