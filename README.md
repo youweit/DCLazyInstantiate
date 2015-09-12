@@ -10,7 +10,7 @@ Generates lazy instantiation for you!
 
 ### Via Alcatraz
 
-1. Search `DCLazyInstantiate` on Alcatraz Package Manger
+1. Search `DCLazyInstantiate` on Alcatraz Package Manager
 
 ### Via source
 
