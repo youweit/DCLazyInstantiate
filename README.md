@@ -8,6 +8,10 @@ Generates lazy instantiation for you!
 
 ## Install & Update
 
+### Via Alcatraz
+
+1. Search `DCLazyInstantiate` on Alcatraz Package Manger
+
 ### Via source
 
 1. Clone this repo
