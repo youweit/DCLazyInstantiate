@@ -28,7 +28,7 @@ curl -fsSL https://raw.githubusercontent.com/Tengag/DCLazyInstantiate/master/scr
 
 ## Usage
 
-Move yout cursor to the property you want to generate lazy instantiation.
+Move your cursor to the property you want to generate lazy instantiation.
 ### In Xcode
 
 ```
