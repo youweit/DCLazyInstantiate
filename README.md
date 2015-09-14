@@ -27,15 +27,20 @@ curl -fsSL https://raw.githubusercontent.com/Tengag/DCLazyInstantiate/master/scr
 ```
 
 ## Usage
+
+Move yout cursor to the property you want to generate lazy instantiation.
 ### In Xcode
+
 ```
 Xcode -> Edit -> DCLazyInstantiate 
 ```
 
 ### DCLazyInstantiate Shortcut (default)
+
 ```
 Shift + Cmd + -
 ```
+
 You can change the shortcut in Settings, `Xcode -> Edit -> DCLazyInstantiate -> Settings`.
 
 ## Todo
