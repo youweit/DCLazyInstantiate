@@ -19,7 +19,7 @@
 
 @implementation DCLazyInstantiate
 
-DEF_SINGLETON( DCLazyInstantiate );
+DEF_SINGLETON(DCLazyInstantiate);
 
 + (void)pluginDidLoad:(NSBundle *)plugin {
     static dispatch_once_t onceToken;
@@ -45,7 +45,7 @@ DEF_SINGLETON( DCLazyInstantiate );
 
 - (void)didApplicationFinishLaunchingNotification:(NSNotification *)notification {
     [[NSNotificationCenter defaultCenter] removeObserver:self name:NSApplicationDidFinishLaunchingNotification object:nil];
-	[DCLazyInstantiateConfig setupMenu];
+    [DCLazyInstantiateConfig setupMenu];
 }
 
 - (void)generateLazyInstantiate:(id)sender {
@@ -57,43 +57,47 @@ DEF_SINGLETON( DCLazyInstantiate );
 
     // Get the selected text using the range from above.
     NSString *selectedString = [sourceTextView.textStorage.string substringWithRange:lineRange];
-    NSString *result = @"";
-	
-	
-    if (selectedString) {
-		@try {
-			NSString *searchedString = selectedString;
-			NSRange searchedRange;
-			searchedRange = NSMakeRange(0, [searchedString length]);
-			NSString *pattern = @"\\)(.+?)\\;";
-			NSError *error = nil;
-			NSRegularExpression *regex = [NSRegularExpression regularExpressionWithPattern:pattern options:0 error:&error];
-			NSArray *matches = [regex matchesInString:searchedString options:0 range:searchedRange];
-			
-			for (NSTextCheckingResult *match in matches) {
-				NSRange group1 = [match rangeAtIndex:1];
-				NSArray *declare = [[searchedString substringWithRange:group1] componentsSeparatedByString:@"*"];
-				NSString *class = [declare[0] stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
-				NSString *varName = [declare[1] stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
-				result = [NSString stringWithFormat:@"- (%@ *)%@ {\n\tif(_%@ == nil) {\n\t\t_%@ = [[%@ alloc] init];\n\t}\n\treturn _%@;\n}\n\n", class, varName, varName, varName, class, varName];
-			}
+    NSString *lazyInstantiation = [self lazyInstantiationWithSelectedString:selectedString];
 
-			if (result.length > 0) {
-				[[DCXcodeUtils currentTextStorage] beginEditing];
-				[[DCXcodeUtils currentTextStorage] replaceCharactersInRange:NSMakeRange((sourceTextView.string.length - 5), 0) withString:result withUndoManager:[[DCXcodeUtils currentSourceCodeDocument] undoManager]];
-				[[DCXcodeUtils currentTextStorage] endEditing];
-			}
-		} @catch (NSException *exception) {
-			NSLog(@"%@", exception.reason);
-		}
+    if (lazyInstantiation != nil && lazyInstantiation.length > 0) {
+        [[DCXcodeUtils currentTextStorage] beginEditing];
+        [[DCXcodeUtils currentTextStorage] replaceCharactersInRange:NSMakeRange((sourceTextView.string.length - 5), 0) withString:lazyInstantiation withUndoManager:[[DCXcodeUtils currentSourceCodeDocument] undoManager]];
+        [[DCXcodeUtils currentTextStorage] endEditing];
+    }
+}
+
+- (NSString *)lazyInstantiationWithSelectedString:(NSString *)selectedString {
+    if (selectedString) {
+        NSString *result = @"";
+        @try {
+            NSString *searchedString = selectedString;
+            NSRange searchedRange;
+            searchedRange = NSMakeRange(0, [searchedString length]);
+            NSString *pattern = @"\\)\\s?(.*?)\\s?\\*([^\\*]+);";
+            NSError *error = nil;
+            NSRegularExpression *regex = [NSRegularExpression regularExpressionWithPattern:pattern options:0 error:&error];
+            NSArray *matches = [regex matchesInString:searchedString options:0 range:searchedRange];
+
+            for (NSTextCheckingResult *match in matches) {
+
+                NSString *class = [searchedString substringWithRange:[match rangeAtIndex:1]];
+                NSString *varName = [searchedString substringWithRange:[match rangeAtIndex:2]];
+                //TODO: custom code style
+                result = [NSString stringWithFormat:@"- (%@ *)%@ {\n\tif(_%@ == nil) {\n\t\t_%@ = [[%@ alloc] init];\n\t}\n\treturn _%@;\n}\n\n", class, varName, varName, varName, class, varName];
+            }
+            return result;
+        } @catch (NSException *exception) {
+            NSLog(@"%@", exception.reason);
+            return nil;
+        }
     }
 }
 
 - (void)showSetting:(id)sender {
-	if ( nil == self.settingWindow ) {
-		self.settingWindow = [[DCSettingsWindowController alloc] initWithWindowNibName:NSStringFromClass([DCSettingsWindowController class])];
-	}
-	[self.settingWindow showWindow:self.settingWindow];
+    if (nil == self.settingWindow) {
+        self.settingWindow = [[DCSettingsWindowController alloc] initWithWindowNibName:NSStringFromClass([DCSettingsWindowController class])];
+    }
+    [self.settingWindow showWindow:self.settingWindow];
 }
 
 - (void)dealloc {
