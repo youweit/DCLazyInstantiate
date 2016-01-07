@@ -47,4 +47,4 @@ You can change the shortcut in Settings, `Xcode -> Edit -> DCLazyInstantiate -> 
 
 1. Mutiselect property support.
 2. Customizing code style.
-3. Insert instantiation in specific prama mark setion.
+3. Insert instantiation in specific prama mark section.
