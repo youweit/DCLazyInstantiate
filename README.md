@@ -50,4 +50,4 @@ You can change the shortcut in Settings, `Xcode -> Edit -> DCLazyInstantiate -> 
 
 ## Done
 
-1. Mutiselect property support.(@D1g1K1d)
+1. Mutiselect property support.(Thanks to:[@D1g1K1d](https://github.com/D1g1K1d))
