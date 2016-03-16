@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F44FD24C1C94ECFB00EC760D /* DCLazyTestDoc.m in Sources */ = {isa = PBXBuildFile; fileRef = F44FD24B1C94ECFB00EC760D /* DCLazyTestDoc.m */; };
 		FB4CEA161B55F007006430AB /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB4CEA151B55F007006430AB /* AppKit.framework */; };
 		FB4CEA181B55F007006430AB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB4CEA171B55F007006430AB /* Foundation.framework */; };
 		FB4CEA1D1B55F007006430AB /* DCLazyInstantiate.xcscheme in Resources */ = {isa = PBXBuildFile; fileRef = FB4CEA1C1B55F007006430AB /* DCLazyInstantiate.xcscheme */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F44FD24B1C94ECFB00EC760D /* DCLazyTestDoc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCLazyTestDoc.m; sourceTree = "<group>"; };
 		FB4CEA121B55F007006430AB /* DCLazyInstantiate.xcplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DCLazyInstantiate.xcplugin; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB4CEA151B55F007006430AB /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		FB4CEA171B55F007006430AB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
@@ -85,6 +87,7 @@
 			children = (
 				FBEC4C161B9ED0AB00807A67 /* Nib */,
 				FBEC4C151B9ED09B00807A67 /* Helper */,
+				F44FD24B1C94ECFB00EC760D /* DCLazyTestDoc.m */,
 				FB4CEA1E1B55F007006430AB /* DCLazyInstantiate.h */,
 				FB4CEA1F1B55F007006430AB /* DCLazyInstantiate.m */,
 				FB9C82961B9EC37000109721 /* DCLazyInstantiateConfig.h */,
@@ -198,6 +201,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FB9C82981B9EC37000109721 /* DCLazyInstantiateConfig.m in Sources */,
+				F44FD24C1C94ECFB00EC760D /* DCLazyTestDoc.m in Sources */,
 				FB4CEA201B55F007006430AB /* DCLazyInstantiate.m in Sources */,
 				FB4CEA321B55F36B006430AB /* DCXcodeUtils.m in Sources */,
 				FB9C82911B9EBEAC00109721 /* DCSettingsWindowController.m in Sources */,
