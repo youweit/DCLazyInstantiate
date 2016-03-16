@@ -45,6 +45,9 @@ You can change the shortcut in Settings, `Xcode -> Edit -> DCLazyInstantiate -> 
 
 ## Todo
 
-1. Mutiselect property support.
-2. Customizing code style.
-3. Insert instantiation in specific prama mark section.
+1. Customizing code style.
+2. Insert instantiation in specific prama mark section.
+
+## Done
+
+1. Mutiselect property support.(@D1g1K1d)
